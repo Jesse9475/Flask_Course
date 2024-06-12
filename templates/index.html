@@ -5,5 +5,9 @@
 {% endblock %}
 
 {% block body %}
-<h1>Home Page</h1>
+{% if username: %}
+    <h1>Hello username: {{username}}</h1>
+{% else %}
+    <h1>Home Page</h1>
+{% endif %}
 {% endblock %}
