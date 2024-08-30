@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block head %} 
+<title>Album Mesh</title>
+<h2>Vote on your Favorite Album</h2>
+<hr>
+<form action='/album_mesh' method='POST'>
+    Song 1: {{song_a}}
+    <br>
+    <a href='/album_mesh/song_1/{{a}}'>Vote for: {{song_a}}</a>
+    <br>
+    Song 2: {{song_b}}
+    <br>
+    <a href='/album_mesh/song_2/{{b}}'>Vote for: {{song_b}}</a>
+</form>
+<hr>
+{% endblock %}
+
+
